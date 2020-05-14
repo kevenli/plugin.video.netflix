@@ -149,14 +149,16 @@ def _check_internet():
     :return: True if connected
     """
     import socket
-    for timeout in [1, 1]:
-        try:
-            socket.setdefaulttimeout(timeout)
-            host = socket.gethostbyname("www.google.com")
-            s = socket.create_connection((host, 80), timeout)
-            s.close()
-            return True
-        except Exception:  # pylint: disable=broad-except
-            # Error when is not reachable
-            pass
-    return False
+    return True
+    # for timeout in [1, 1]:
+    #     try:
+    #         socket.setdefaulttimeout(timeout)
+    #         host = socket.gethostbyname("www.google.com")
+    #         s = socket.create_connection((host, 80), timeout)
+    #         s.close()
+    #         return True
+    #     except Exception:  # pylint: disable=broad-except
+    #         # Error when is not reachable
+    #         pass
+    # return True
+    #return False
