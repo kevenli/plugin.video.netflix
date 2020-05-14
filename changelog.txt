@@ -1,3 +1,13 @@
+v1.3.0 (2020-05-17)
+Note to RPI devices: credentials will be asked again a storage problem has been fixed
+-Add new "Top 10" menu list
+-Reimplemented parental control
+-Continue watching is now working with Netflix watched status sync
+-Fixed an issue that caused a wrong watched status sync at end of playback
+-Fixed an issue that caused missing to export some new seasons
+-Minor improvements/fixes
+-Updated translations en, it,
+
 v1.2.2 (2020-05-07)
 -Fixed a issue regression caused problems to 1080P/4K playback
 
